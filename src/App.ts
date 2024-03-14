@@ -65,6 +65,7 @@ export class App extends gfx.GfxApp
         //gridLines.setColors(gridColors);
         this.scene.add(gridLines);
 
+        this.robotArm.createHierarchy();
         this.robotArm.createGeometry();
         this.scene.add(this.robotArm);
     }
